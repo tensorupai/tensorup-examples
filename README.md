@@ -5,6 +5,7 @@ Runnable code for posts on [TensorUp](https://tensorup.ai). Each folder is one p
 | Sample | What it shows | Post |
 | --- | --- | --- |
 | [prompt-is-a-layered-program](prompt-is-a-layered-program/) | A prompt kept as six provider-neutral layers, compiled per model by `compile_request()` and a `ModelProfile`, sent through LiteLLM, with the output contract checked again by Pydantic | [A Prompt Is a Layered Program](https://tensorup.ai/posts/prompt-is-a-layered-program) |
+| [why-agents-loop-forever](why-agents-loop-forever/) | A Strands Agents planner/executor split where a deterministic `GoalCheck` reviews system state after each executor run and reports only to the planner, while `NoProgressGuard` and `Limits` bound the executor's tool loop | [Why Your Agent Loops Forever](https://tensorup.ai/posts/why-agents-loop-forever) |
 
 ## Run a sample
 
