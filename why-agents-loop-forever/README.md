@@ -1,6 +1,6 @@
 # Why Your Agent Loops Forever: Put the Review Step Outside the Executor
 
-Companion code for "Why Your Agent Loops Forever: Put the Review Step Outside the Executor" (<https://tensorup.ai/posts/why-agents-loop-forever>). It implements a planner/executor split on Strands Agents 1.62.0 in which a deterministic `GoalCheck` reviews system state after each executor run and reports only to the planner, while `NoProgressGuard` and per-call `Limits` bound the executor's own loop.
+Companion code for "Why Your Agent Loops Forever: Put the Review Step Outside the Executor" (<https://tensorup.ai/posts/why-your-agent-loops-forever-put-the-review-step-outside-the-executor/>). It implements a planner/executor split on Strands Agents 1.62.0 in which a deterministic `GoalCheck` reviews system state after each executor run and reports only to the planner, while `NoProgressGuard` and per-call `Limits` bound the executor's own loop.
 
 ## What it shows
 
