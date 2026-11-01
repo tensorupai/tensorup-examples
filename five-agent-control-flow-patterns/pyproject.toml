@@ -1,0 +1,35 @@
+[project]
+name = "controlflow"
+version = "0.1.0"
+description = "The five agent control-flow patterns on Strands Agents: single loop, router, graph, planner/executor, supervisor (TensorUp sample)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "strands-agents[openai,anthropic]==1.63.0",
+    "openai==3.42.0",
+    "anthropic==0.125.0",
+    "python-dotenv==1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+    "ruff==0.17.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/controlflow"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
